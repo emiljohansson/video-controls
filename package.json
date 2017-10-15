@@ -1,6 +1,6 @@
 {
   "name": "video-controls",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Add some default keyboard and mouse controls to the native html video.",
   "main": "index.js",
   "scripts": {

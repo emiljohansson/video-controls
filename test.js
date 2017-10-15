@@ -38,24 +38,9 @@ const TestHandler = () => {
     this.webkitDisplayingFullscreen = true
   }
   videoEl.currentTime = 0
-  // const mockEl = {
-  //   realEl: videoEl,
-  //   style: {},
-  //   addEventListener () {},
-  //   removeEventListener () {},
-  //   webkitDisplayingFullscreen: false,
-  //   webkitExitFullScreen () {
-  //     this.webkitDisplayingFullscreen = false
-  //   },
-  //   webkitEnterFullscreen () {
-  //     this.webkitDisplayingFullscreen = true
-  //   }
-  // }
-  // document.body.appendChild(videoEl)
   return {
     el: videoEl,
     cleanup: vc => {
-      // document.body.removeChild(videoEl)
       vc.destroy()
     }
   }
